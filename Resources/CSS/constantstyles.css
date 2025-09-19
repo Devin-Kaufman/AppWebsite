@@ -1,0 +1,162 @@
+main {
+  flex: 1; /* Allow main to grow and take available space */
+  padding: 20px; /* Add padding for content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-image: url('../images/none'); /* Path to your background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+html, body {
+  background-color: transparent;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #0c4f12;
+  padding: 10px; /* Adjust padding for better alignment */
+  height: 40px;
+}
+
+header img {
+  height: 60px;
+  margin-right: 5px; /* Keep margin for spacing between image and text */
+}
+
+header div {
+  text-align: center; /* Center the text within the div */
+  flex: 1; /* Allow text to take up remaining space */
+  padding: 10px 0;
+  margin-right: 310px;
+  flex-direction: column;
+  
+}
+
+
+header h1 {
+  color: #FDFDFC;
+  font-size: 23px;
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+  color: #FDFDFC;
+}
+
+header a {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+@media (max-width: 850px) {
+  header {
+    justify-content: flex-start; /* Aligns header content to the right */
+  }
+
+  header div {
+    margin-right: 0; /* Remove right margin for better alignment */
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.nav-banner {
+  background-color: #AA9648;
+  padding: 10px 20px;
+  border-top: 1px solid #7a6b3f; /* Add a slight top border */
+  border-bottom: 1px solid #ccc; /* Add bottom border */
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Creates space between nav links */
+  flex-wrap: wrap;
+  line-height: 0.8;
+}
+
+nav a {
+  color: #FDFDFC;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 700px) {
+  nav {
+    line-height: 0.1; /* Reduce line-height to decrease vertical spacing */
+  }
+
+  nav a {
+    max-width: 150px; /* Limit the width of each link */
+    text-align: center; /* Center the text within the link */
+  }
+}
+
+/* Main content styling */
+main {
+  flex: 1; /* Allow main to grow and take available space */
+  padding: 20px; /* Add padding for content */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Footer styling */
+footer {
+  background-color: #0c4f12;
+  padding: 5px 5px; /* Keep padding as is or adjust if needed */
+  text-align: center;
+  border-top: 1px solid #ccc;
+  display: flex; /* Use flexbox for spacing */
+  justify-content: center; /* Center items */
+  align-items: center; /* Center items vertically */
+  height: 35px; /* Reduced height by 50% */
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+footer a {
+  margin: 0 10px; /* Adjust margin for closer spacing (reduced from 10px to 2px) */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+footer img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  border-radius: 20px; /* Add border radius for rounded images */
+}
+
+footer a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.general-container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for the container */
+  border-radius: 10px; /* Rounded corners for the overall container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.divider {
+  width: 80%; /* Width of the divider */
+  height: 2px; /* Thickness of the line */
+  background-color: #ccc; /* Color of the line */
+  margin: 10px auto; /* Center the divider */
+  border-radius: 1px; /* Slight rounding for a softer look */
+}

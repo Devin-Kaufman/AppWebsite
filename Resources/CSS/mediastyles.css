@@ -1,0 +1,27 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Four items per row */
+  gap: 15px; /* Space between items */
+}
+
+.gallery-item {
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 2px solid #ddd; /* Noticeable border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    transition: transform 0.2s; /* Smooth scaling effect */
+    padding: 5px; /* Reduced padding for tighter fit */
+    height: 350px; /* Fixed height to optimize viewing */
+}
+
+.gallery-item img, .gallery-item video {
+  max-width: 100%; /* Responsive media */
+  max-height: 100%; /* Fill container height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Maintain aspect ratio while fitting within */
+}

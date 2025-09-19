@@ -1,0 +1,53 @@
+.content-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px; /* Space between boxes */
+}
+
+.content-box h2 {
+  text-align: center; /* Center the title */
+  margin: 0 0 20px; /* Add margin below the title */
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.left-image {
+  max-width: 60%; /* Image takes up to 40% of the space */
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+.text-content {
+  flex: 1; /* Text takes up remaining space */
+}
+
+.text-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px; /* Space between boxes */
+}
+
+.text-box h2 {
+  text-align: center; /* Center the title */
+  color: #333; /* Match text color */
+}
+
+.text-box p {
+  text-align: center;
+}
+
+.text-box a {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color */
+}
+
+.text-box a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
