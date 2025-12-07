@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resources/CSS/constantstyles.css">
+    <link rel="stylesheet" href="Resources/CSS/textboxstyles.css">
+    <title>Advanced Antenna Design Timeline and Deliverables</title>
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header>
+  <a href="https://www.colostate.edu/" target="_blank">
+      <picture>
+          <source media="(max-width: 600px)" srcset="Resources\Images\CSU-ECE-Logo.png">
+          <source media="(min-width: 601px)" srcset="Resources\Images\CSU-ECE-Logo.png">
+          <img src="Resources\Images\CSU-ECE-Logo.png" alt="Logo"> <!-- Fallback image -->
+      </picture>
+  </a>
+  <div>
+      <h1>Advanced Antenna Design</h1>
+      <p>2025-2026</p>
+  </div>
+</header>
+
+<!-- Navigation bar -->
+<nav class="nav-banner">
+    <a href="index.html">Home</a>
+    <a href="Biography.html">Team</a>
+    <a href="timeline.html">Timeline and Deliverables</a>
+    <a href="documents.html">Documents</a>
+    <a href="media.html">Media</a>
+    <a href="acknow.html">Acknowledgements</a>
+</nav>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Process Step</th>
+      <th>Potential Failure Mode</th>
+      <th>Potential Failure Effect</th>
+      <th>SEV</th>
+      <th>Potential Causes</th>
+      <th>OCC</th>
+      <th>Current Process Controls</th>
+      <th>DET</th>
+      <th>RPN</th>
+      <th>Action Recommended</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Simulation</td>
+      <td>Genetic algorithm fails</td>
+      <td>Wasted time</td>
+      <td>2</td>
+      <td>Errors in software / HFSS</td>
+      <td>4</td>
+      <td>Peer review of code and regular testing</td>
+      <td>1</td>
+      <td>8</td>
+      <td>Regular backups to git server to ensure stable versions and prevent holdups.</td>
+    </tr>
+
+    <tr>
+      <td>Design</td>
+      <td>Design specifications are unclear</td>
+      <td>Final product does not meet design need</td>
+      <td>3</td>
+      <td>Bad communication between team members</td>
+      <td>3</td>
+      <td>Clear and concise communication about design requirements</td>
+      <td>3</td>
+      <td>18</td>
+      <td>Establish a formal structure for teammates to communicate antenna design parameters.</td>
+    </tr>
+
+    <tr>
+      <td>Manufacture</td>
+      <td>Milling machine breaks</td>
+      <td>Damage to hardware, antennas, and operator injury</td>
+      <td>4</td>
+      <td>Improper use / progressive wear</td>
+      <td>2</td>
+      <td>Mandatory PPE; operator training required</td>
+      <td>3</td>
+      <td>24</td>
+      <td>Promote safety culture; train more operators on correct milling procedure.</td>
+    </tr>
+
+    <tr>
+      <td>Manufacture</td>
+      <td>Dielectric out of specification</td>
+      <td>Final product does not meet specification</td>
+      <td>3</td>
+      <td>Improper measurement of dielectric</td>
+      <td>4</td>
+      <td>Use LCR meter to calculate dielectric constant</td>
+      <td>2</td>
+      <td>24</td>
+      <td>If inaccurate, switch to higher-quality board or improve measurement technique.</td>
+    </tr>
+
+    <tr>
+      <td>Testing</td>
+      <td>PNA or associated hardware breaks</td>
+      <td>Unable to test antennas and operate ATR</td>
+      <td>10</td>
+      <td>Improper use, ESD, power surge</td>
+      <td>3</td>
+      <td>Torque wrench for coax cables; grounding bracelet; surge protector; PNA usage documentation</td>
+      <td>3</td>
+      <td>90</td>
+      <td>Further education, operator testing, and improved signage around PNA.</td>
+    </tr>
+
+    <tr>
+      <td>Testing</td>
+      <td>ATR is damaged</td>
+      <td>Damage to ATR; operator injury</td>
+      <td>10</td>
+      <td>Misuse, interlock failure, E-Stop failure, limit switch failure, miscommunication</td>
+      <td>2</td>
+      <td>Off switch; monitoring camera; limit switches; software interlocks; crash-detection motor drivers; slow operation</td>
+      <td>2</td>
+      <td>40</td>
+      <td>Safety evaluation, documentation, add E-Stops & indicator lights, checklists, signage, ATR safety officer.</td>
+    </tr>
+  </tbody>
+</table>
+
+<footer>
+    <a href="https://www.engr.colostate.edu/ece/" target="_blank">
+        <img src="Resources/images/CSU-ECE-Logo.png" alt="ECE Logo">
+    </a>
+    <a href="https://www.engr.colostate.edu/ece/senior-design/?ay=2024" target="_blank">
+        <img src="Resources/images/OtherTeamsLogo.png" alt="Other Teams Logo">
+    </a>
+    <a href="https://give.colostate.edu/campaigns/40250/donations/new" target="_blank">
+        <img src="Resources/images/SupportLogo.png" alt="Support Logo">
+    </a>
+</footer>
+
+</body>
+</html>
